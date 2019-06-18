@@ -1,0 +1,37 @@
+<aside class="responsive-banner">
+  <span class="circle-a"></span>
+  <span class="circle-b"></span>
+  <img src="https://i.pinimg.com/originals/97/6e/c4/976ec4f38121bec2209f6e12ff776547.png" />
+  <div class="container-envelope">
+    
+    <div class="col-xs-12">
+      <p>Live Sites using our WordPress Themes</p>
+      <a target="_blank" href="https://www.silocreativo.com/en/showcase/" class="more-link">Get inspired</a>
+    </div>
+  </div>
+</aside>
+
+<ul class="list-unstyled" style="position: absolute; top: 20%; left: 24%; width: 968px;">
+
+    <% @products.each do |product| %>
+      <li class="media">
+        <img src="..." class="align-self-center mr-3" alt="...">
+        <div class="media-body">
+          <table width="100%"><tr width=100%>
+            <td width="90%" id="post">
+
+            <%= link_to product_path(product["id"]) do %>
+              <ul class="list-inline">
+                <li class="list-inline-item post-title">Brand: <%= product["brand"] %></li>
+                <li class="list-inline-item post-info">Model: <%= product["model"] %></li>
+              </ul>
+            <% end %>
+              <ul class="list-inline">
+                <li class="list-inline-item post-info">Price: $<%= product["price"] %></li>
+                <li class="list-inline-item post-info">Description: <%= product["short_description"] %></li>
+              </ul>
+            </td>
+          </tr></table>
+      </li>
+    <% end %>
+  </ul>

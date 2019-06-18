@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: 
+  model: 
+  variant: 
+  price: 1
+  short_description: 
+  long_description: 
+
+two:
+  brand: 
+  model: 
+  variant: 
+  price: 1
+  short_description: 
+  long_description: 

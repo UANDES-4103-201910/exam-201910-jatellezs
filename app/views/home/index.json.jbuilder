@@ -1,0 +1,1 @@
+json.array! @roductss, partial: 'products/product', as: :product

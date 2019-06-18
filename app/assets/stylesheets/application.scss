@@ -1,0 +1,297 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope. require_self and require_tree with =
+ *
+ */
+
+ @import "bootstrap";
+
+
+/*-------------NAVBAR------------*/
+
+.navbar {
+	background-color: #b80000;
+	height: 70px;
+}
+.navbar-brand {
+	font-size: 40px;
+}
+#nav-search{
+	border-radius: 12px;
+	font-size: 18px;
+}
+#nav-search:hover {
+	color: #b80000;
+}
+.nav-link {
+	font-size: 25px;
+}
+.log {
+	font-size: 18px;
+}
+.logout {
+	border-left: 1px solid #9b0000;
+	margin-left: 5px;
+}
+
+/*---------------FOOTER--------------*/
+
+.page-footer {
+	background: White;
+}
+
+/*--------------HOME-------------*/
+
+#new-post-btn {
+	vertical-alignment: center;
+	color: White;
+}
+#new-post-icon {
+	font-size: 15px;
+	padding: 5px;
+}
+#vote {
+	color: DarkGrey;
+	font-size: 25px;
+}
+#vote:hover, .fa-caret-up:hover {
+	color: Grey;
+}
+
+body {
+	padding: 90px;
+}
+
+.input-group {
+	width: 250px;
+	horizontal-alignment: right;
+}
+
+.media {
+	padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 0.5px;
+	border-radius: 40px;
+	border-style: solid;
+	border-color: LightGrey;
+	margin: 5px;
+}
+.media:hover {
+	border-color: #b80000;
+}
+.media:active{
+	background: LightGrey;
+}
+.post-title {
+	font-size: 16px;
+	color: Black;
+}
+.post-info {
+	font-size: 11px;
+	color: Grey;
+	font-style: normal;
+}
+
+
+/* ------PROFILE---------*/
+
+
+#profile-name {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#profile-email {
+	color: DarkGrey;
+}
+
+#profile-location {
+	color: Grey;
+	font-size: 15px;
+}
+
+#profile-biography {
+	padding: 15px;
+	border-style: solid;
+	border: 0.25px;
+	border-color: LightGrey;
+	border-radius: 40px;
+}
+
+#profile-navtab{
+	width: 57%;
+	margin: 0 auto;
+}
+
+#list-tab {
+	width: 60%;
+}
+
+#profile-tab {
+	background: #9b0000;
+}
+#profile-tab:hover, #profile-tab:active {
+	background: #b80000;
+	text-decoration: underline #b80000;
+}
+#profile-tab-link, #profile-tab-link:hover {
+	color: White;	
+	font-style: normal;
+	font-size: 25px;
+}
+
+
+#activity-description {
+	font-size: 13px;
+	color: #202020;
+	margin: 0px;
+}
+#activity-left-column {
+	border-right: 1px solid DarkGrey;
+	padding-right: 15px;
+}
+#activity-right-column {
+	border-left: 1px solid DarkGrey;
+	padding-left: 15px;
+}
+
+/*--------------POST--------------*/
+
+#post-author-info {
+	padding: 10px;
+	border-right: 0.2px solid #b80000;
+}
+#post-author-name {
+	font-size: 20px;
+	color: Black;
+	align: center;
+	font-weight: bold;
+}
+#post-author-name:hover {
+	text-decoration: underline White;
+	font-style: normal;
+	color: #b80000;
+}
+#post-info {
+	padding: 20px;
+}
+#post-title {
+	font-weight: bold;
+}
+.fa-globe {
+	font-size: 13px;
+}
+#post-location {
+	color: Grey;
+	font-size: 13px;
+}
+#post-date-votes {
+	align: center
+}
+#post-date {
+	font-size: 12px;
+	text-align: right;
+}
+
+#post-tab {
+	background: #9b0000;
+}
+#post-tab:hover{
+	background: #b80000;
+}
+#post-tab-link, #profile-tab-link:hover {
+	color: White;	
+	font-style: normal;
+	font-size: 25px;
+}
+#post-tab-link:hover {
+	text-decoration: underline #b80000;
+}
+
+#comment-author {
+	font-size: 17px;
+	color: Black;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+#comment-author:hover {
+	text-decoration: underline White;
+	font-style: normal;
+	color: #b80000;
+}
+#comment-content {
+	margin-top: 0px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #f5dada;
+	font-size: 15px;
+	border-radius: 15px;
+	display: inline-block;
+}
+#comment-date {
+	font-size: 12px;
+	text-align: right;
+}
+
+#new-comment-content {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.fa-exclamation-circle:hover, fa-times:hover, fa-edit:hover {
+	color: Grey;
+}
+
+/*-----------------------New User--------------*/
+
+.form-text-field {
+	border-radius: 15px;
+	border: solid 1px #b80000;
+	padding: 5px;
+}
+.form-text-field:hover {
+	background: #f4effc;
+}
+.back-link {
+	color: DarkGrey;
+}
+.back-link:hover {
+	color: Grey;
+	text-decoration: underline White;
+}
+.col-select {
+	width: 200px;
+}
+
+/*------------------------New Post------------*/
+
+.custom-file {
+	width: 40%;
+	padding: 2px;
+}
+
+/*-----------------------Dumpster----------*/
+
+#dump-entry-body {
+	padding-left: 10px;
+}
+
+
+/*--------------------Blacklist----------------*/
+
+#blacklist-search {
+	color: #b80000;
+	border: solid 1px #b80000;
+}
